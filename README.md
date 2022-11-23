@@ -6,10 +6,52 @@ _GreenRobotics_
 
 ## Systeem eigenschappen
 
-**Pagina's**
+### Pagina's
 
 - Home
 - Planten
 - Camera views
 - Settings
 - acount beheer
+
+### Home
+
+Op de home pagina vind je algemene systeem info. Denk aan hoeveel spanning het systeem trekt, waar het mee bezig is, in welke staat het zich bevindt, hoelang het systeem draait enzovoort. Hier valt niet veel aan te passen, maar deze pagina is meer informatief.
+
+### Planten
+
+Op de planten pagina kan je zien welke planten er geplant zijn. Je ziet hier de status van iedere plant, maar je kan hier ook groenten planten.
+
+### Camera views
+
+Op de camera pagina vind je de kamerabeelden van het systeem. Niet meer en niet minder, ook dus een pure informatieve pagina om mee te kijken met het systeem.
+
+### Settings
+
+Op de settings pagina vind je meerdere instellingen. Zo kan je het systeem helemaal naar eigen wens instellen. Denk aan de hoeveelheid water nodig is voor planten, hoe vaak hij op onkruid checkt, en noem het maar op.
+
+### Acount beheer
+
+Deze pagina spreekt voor zich, hier kan je je account beheren. Denk aan instellingen zoals je wachtwoord, of het beheren van andere accounts en wat deze mogen doen in het systeem.
+
+## Algemene info
+
+**BELANGRIJK**
+
+Het systeem werkt met bepaalde hardware. Het is een combinatie van deze hardware die het systeem compleet maakt. Er valt natuurlijk het een en ander te veranderen, maar de componenten moeten aan bepaalde eisen voldoen wil het systeem nog optimaal werken. 
+
+_GreenRobotics is niet aansprakelijk voor eventuele schade aan personen of voorwerpen. Ook zijn we niet aansprakelijk betreft niet werkende systemen die niet door GreenRobotics zelf zijn ontworpen en gecreëerd_
+
+### Hardware
+
+Het systeem bestaat uit verschillende onderdelen. Deze onderdelen zijn globaal omschreven, je bent vrij hierin je eigen product keus te maken.
+
+- Linux computer met minimaal 2 usb poorten en ethernet of WiFi aansluiting _**Advies: Raspberry Pi 4B**_
+- Controler board van een 3D printer MET SENSORLESS HOMING _**Advies: BTT SKR 2**_
+- Micro controler voor sensoren _**Advies: Arduino Uno**_
+
+## Updates
+
+| Persoon | Datum | Opmerking |
+| ----------- | ----------- | ----------- |
+| Sebastiaan | 23-11-2022 | Updated the header of the site with all correct redirections to pages |
