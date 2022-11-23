@@ -56,6 +56,7 @@ _Algemene configuratie van GreenRobotics_
 
 ## Updates
 
-| Persoon | Datum | Opmerking |
-| ----------- | ----------- | ----------- |
-| Sebastiaan | 23-11-2022 | Updated the header of the site with all correct redirections to pages |
+| Update Nr. | Persoon | Datum | Opmerking |
+| ----------- | ----------- | ----------- | ----------- |
+| 1.1 | Sebastiaan | 23-11-2022 | Updated the header of the site with all correct redirections to pages |
+| 1.2 | Sebastiaan | 23-11-2022 | Setup to create all user administration pages and updated git and readme for easy documentation |
