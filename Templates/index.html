@@ -1,3 +1,47 @@
 {% load static %}
-<h1>Hallo</h1>
-{% include page %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://kit.fontawesome.com/e159070c59.js" crossorigin="anonymous"></script>
+    <title>GR-System</title>
+    <link rel="stylesheet" href="{% static 'CSS/index.css' %}"/>
+    <link rel="stylesheet" href="{% static 'CSS/01-settings.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'IMG/blaadje.png' %}">
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <a href="/" class="navItem">
+          <i class="fa-solid fa-house"></i>
+          <p>Home</p>
+        </a>
+        <a href="/plants" class="navItem">
+          <i class="fa-solid fa-leaf"></i>
+          <p>Planten</p>
+        <a href="/camera" class="navItem">
+          <i class="fa-solid fa-camera"></i>
+          <p>Camera's</p>
+        </a>
+        <a href="/settings" class="navItem">
+          <i class="fa-solid fa-gear"></i>
+          <p>Instellingen</p>
+        </a>
+        {% if user.is_authenticated %}
+        <a href="/user" class="navItem">
+          <i class="fa-solid fa-user"></i>
+          <p>Account</p>
+        </a>
+        {% else %}
+        <a href="/register" class="navItem">
+          <i class="fa-solid fa-user"></i>
+          <p>Register</p>
+        </a>
+        {% endif %}
+      </div>
+    </header>
+    {% include page %}
+  </body>
+</html>
