@@ -50,6 +50,10 @@ Het systeem bestaat uit verschillende onderdelen. Deze onderdelen zijn globaal o
 - Controler board van een 3D printer MET SENSORLESS HOMING _**Advies: BTT SKR 2**_
 - Micro controler voor sensoren _**Advies: Arduino Uno**_
 
+<img src="./Static/IMG/config.jpg" alt="drawing" width="200"/>
+
+_Algemene configuratie van GreenRobotics_
+
 ## Updates
 
 | Persoon | Datum | Opmerking |
