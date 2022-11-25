@@ -15,20 +15,16 @@ def loginView(request):
 
     if request.method == 'POST':
         if 'LoginUser' in request.POST:
-            try:
-                username = request.POST.get('userName')
-                password = request.POST.get('userPassword')
-                user = authenticate(username=username, password=password)
-                if user is not None:
-                    login(request, user)
-                    return redirect('')
-                else:
-                    return render(request, 'index.html', {'page': 'UserAdmin/login.html', 'error': 'Your username and/or password were incorrect.'})
-            except:
-                return render(request, 'index.html', {'page': 'UserAdmin/login.html', 'error': 'Invalid Form'})
-
+            userName = request.POST.get('userName')
+            userPassword = request.POST.get('userPassword')
+            user = authenticate(username=userName, password=userPassword)
+            if user is not None:
+                login(request, user)
+                return redirect('')
+            else:
+                return render(request, 'index.html', {'page': 'UserAdmin/login.html', 'error': 'Your username and/or password were incorrect.'})
         else:
-            return render(request, 'index.html', {'page': 'registration/login.html', 'error': 'none'})
+            return redirect('/login')
 
 
     return render(request, 'index.html', data)

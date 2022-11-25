@@ -62,3 +62,4 @@ _Algemene configuratie van GreenRobotics_
 | 1.2 | Sebastiaan | 23-11-2022 | Setup to create all user administration pages and updated git and readme for easy documentation |
 | 2.1 | Sebastiaan | 25-11-2022 | Created backend system for registrating empty user accounts |
 | 2.2 | Sebastiaan | 25-11-2022 | Completed all the backend and frontend of the authenticating system (login and register), now starting to work on the user profile and edditable settings |
+| 2.3 | Sebastiaan | 25-11-2022 | Updated some error from auth system and started working on the permissions system for administrating the user system and user permissions |
