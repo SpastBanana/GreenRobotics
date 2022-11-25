@@ -1,6 +1,8 @@
 :root {
-    --nav-nodge-radius: 25px;
+    --nav-nodge-radius: 22px;
+    --nav-nodge-border: 4px;
     --system-ral: #57A639;
     --nav-icon-size: 80px;
     --nav-trans-time: 0.5s;
+    --header-height: 70px;
 }

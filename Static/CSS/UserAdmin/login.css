@@ -1,0 +1,57 @@
+:root {
+    --login-height: 45%;
+    --login-width: 30%;
+    --login-font: 14px;
+}
+
+main {
+    height: calc(100vh - var(--header-height));
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    height: var(--login-height);
+    width: var(--login-width);
+}
+
+form h2 {
+    color: var(--system-ral);
+}
+
+form input,
+form button {
+    width: 100%;
+    padding: 10px;
+    font-size: var(--login-font);
+    outline: none;
+    border: none;
+    border-bottom: solid 1px #555555;
+}
+
+form button {
+    background-color: white;
+    color: var(--system-ral);
+    font-weight: 900;
+    border: solid 3px var(--system-ral);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.error {
+    font-style: italic;
+    color: red;
+    font-size: 15px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}

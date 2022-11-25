@@ -6,9 +6,30 @@ from django.contrib.auth import login, logout, authenticate
 
 
 def loginView(request):
+    if request.user.is_authenticated:
+        return redirect('/profile')
+
     data = {
         'page': 'UserAdmin/login.html'
     }
+
+    if request.method == 'POST':
+        if 'LoginUser' in request.POST:
+            try:
+                username = request.POST.get('userName')
+                password = request.POST.get('userPassword')
+                user = authenticate(username=username, password=password)
+                if user is not None:
+                    login(request, user)
+                    return redirect('')
+                else:
+                    return render(request, 'index.html', {'page': 'UserAdmin/login.html', 'error': 'Your username and/or password were incorrect.'})
+            except:
+                return render(request, 'index.html', {'page': 'UserAdmin/login.html', 'error': 'Invalid Form'})
+
+        else:
+            return render(request, 'index.html', {'page': 'registration/login.html', 'error': 'none'})
+
 
     return render(request, 'index.html', data)
 
@@ -34,10 +55,20 @@ def registerView(request):
             user.save()
 
             if userName == '' or userEmail == '' or userPassword == '':
-                return redirect('/register/Error')
+                data = {
+                    'page': 'UserAdmin/register.html',
+                    'check': 'none',
+                    'error': 'No data in required fields'
+                }
+                return render(request, 'index.html', data)
 
             else:
-                return redirect('/register/Created')
+                data = {
+                    'page': 'UserAdmin/register.html',
+                    'check': 'User created, ask the system admin for system rights',
+                    'error': 'none'
+                }
+                return render(request, 'index.html', data)
 
         else:
             return redirect('/register')
