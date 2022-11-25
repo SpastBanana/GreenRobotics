@@ -60,3 +60,4 @@ _Algemene configuratie van GreenRobotics_
 | ----------- | ----------- | ----------- | ----------- |
 | 1.1 | Sebastiaan | 23-11-2022 | Updated the header of the site with all correct redirections to pages |
 | 1.2 | Sebastiaan | 23-11-2022 | Setup to create all user administration pages and updated git and readme for easy documentation |
+| 2.1 | Sebastiaan | 25-11-2022 | Created backend system for registrating empty user accounts |

@@ -16,9 +16,18 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-import Frontend.views
+import Frontend.GreenViews.views
+import Frontend.GreenViews.UserAdmin
 
 urlpatterns = [
+    # main site pages
     path('admin/', admin.site.urls),
-    path('', Frontend.views.homeView, name="Home")
+    path('', Frontend.GreenViews.views.homeView, name="Home"),
+    path('deletepost', Frontend.GreenViews.views.deletepostView, name="DeletePost"),
+
+    # User management pages
+    path('login', Frontend.GreenViews.UserAdmin.loginView, name="Login"),
+    path('register', Frontend.GreenViews.UserAdmin.registerView, name="Register"),
+    path('profile', Frontend.GreenViews.UserAdmin.profileView, name="Profile"),
+    path('logout', Frontend.GreenViews.UserAdmin.logoutView, name="Logout"),
 ]
