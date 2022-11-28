@@ -20,7 +20,7 @@ def loginView(request):
             user = authenticate(username=userName, password=userPassword)
             if user is not None:
                 login(request, user)
-                return redirect('')
+                return redirect('/')
             else:
                 return render(request, 'index.html', {'page': 'UserAdmin/login.html', 'error': 'Your username and/or password were incorrect.'})
         else:

@@ -12,6 +12,7 @@ class GreenPermissions(models.Model):
             ('GreenSeedSystem', 'GreenSeedSystem'),
             ('GreenCameraOne', 'GreenCameraOne'),
             ('GreenCameraTwo', 'GreenCameraTwo'),
+            ('GreenDatabase', 'GreenDatabase'),
         )
 
     def __str__(self):

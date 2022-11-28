@@ -8,6 +8,3 @@ def homeView(request):
     }
 
     return render(request, 'index.html', data)
-
-def deletepostView (request, page):
-    return redirect(f'{page}')

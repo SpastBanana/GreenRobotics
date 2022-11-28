@@ -23,7 +23,6 @@ urlpatterns = [
     # main site pages
     path('admin/', admin.site.urls),
     path('', Frontend.GreenViews.views.homeView, name="Home"),
-    path('deletepost', Frontend.GreenViews.views.deletepostView, name="DeletePost"),
 
     # User management pages
     path('login', Frontend.GreenViews.UserAdmin.loginView, name="Login"),
