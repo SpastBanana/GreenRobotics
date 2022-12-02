@@ -64,3 +64,4 @@ _Algemene configuratie van GreenRobotics_
 | 2.2 | Sebastiaan | 25-11-2022 | Completed all the backend and frontend of the authenticating system (login and register), now starting to work on the user profile and edditable settings |
 | 2.3 | Sebastiaan | 25-11-2022 | Updated some error from auth system and started working on the permissions system for administrating the user system and user permissions |
 | 3.1 | Sebastiaan | 28-11-2022 | Fixed some bugs in my spare time |
+| 4.1 | Sebastiaan | 02-12-2022 | Auth system updates for rights and guest users, also started at the frontend of the user info and auth setup pages |

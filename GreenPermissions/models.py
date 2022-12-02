@@ -6,7 +6,9 @@ class GreenPermissions(models.Model):
     class Meta:
         permissions = (
             ('GreenSystemAdmin', 'GreenSystemAdmin'),
-            ('GreenPermissions', 'GreenPermissions'),
+            ('GreenSystemUser', 'GreenSystemUser'),
+            ('GreenSystemGuest', 'GreenSystemGuest'),
+            ('GreenAddPermissions', 'GreenAddPermissions'),
             ('GreenWaterSystem', 'GreenWatherSystem'),
             ('GreenWeedSystem', 'GreenWeedSystem'),
             ('GreenSeedSystem', 'GreenSeedSystem'),

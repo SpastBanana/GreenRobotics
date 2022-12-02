@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from .UserAdminPrev import getPageInfo
 
 # needed for user management
 from django.contrib.auth.models import User
@@ -41,9 +42,6 @@ def registerView(request):
             userName = request.POST.get('userName')
             userEmail = request.POST.get('userEmail')
             userPassword = request.POST.get('userPassword')
-            print(userName)
-            print(userEmail)
-            print(userPassword)
 
             user = User.objects.create_user(f'{userName}', f'{userEmail}', f'{userPassword}')
             user.first_name = firstName
@@ -72,9 +70,10 @@ def registerView(request):
     return render(request, 'index.html', data)
 
 def profileView(request):
-    data = {
-        'page': 'UserAdmin/profile.html'
-    }
+    userName = request.user.username
+    perms = request.user.get_all_permissions()
+
+    data = getPageInfo(userName, perms)
 
     return render(request, 'index.html', data)
 

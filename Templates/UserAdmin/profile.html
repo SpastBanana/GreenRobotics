@@ -6,5 +6,24 @@
 </head>
 
 <main>
-    
+    <div class="header">
+        <p>User</p>
+        <p>Rights</p>
+        <p>Auth</p>
+        {% if role == 'admin' %}
+        <p>Admin</p>
+        {% endif %}
+    </div>
+    <section class="user">
+        <div class="userLeft">
+            <h2>Welkom</h2>
+            <h1>{{ username }}</h1>
+        </div>
+    </section>
+    <section class="rights">
+
+    </section>
+    <section class="auth">
+
+    </section>
 </main>
